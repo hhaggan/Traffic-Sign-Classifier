@@ -31,8 +31,8 @@ X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.
 
 #defining some hyperparameters
 n_classes = 43
-epochs = 10
-batch_size = 128
+epochs = 30
+batch_size = 64
 rate = 0.001
 
 #defining the features and labels
