@@ -31,7 +31,7 @@ X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.
 
 #defining some hyperparameters
 n_classes = 43
-epochs = 30
+epochs = 150
 batch_size = 64
 rate = 0.001
 
@@ -147,8 +147,8 @@ with tf.Session() as sess:
     saver.save(sess, './lenet')
     print("Model saved")
 
-'''with tf.Session() as sess:
+with tf.Session() as sess:
     saver.restore(sess, tf.train.latest_checkpoint('.'))
 
     test_accuracy = evaluate(X_test, y_test)
-    print("Test Accuracy = {:.3f}".format(test_accuracy))'''
+    print("Test Accuracy = {:.3f}".format(test_accuracy))
